@@ -1,15 +1,13 @@
 package com.shrad.bookmovies.repository.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Set;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @Entity
 @Table(name = "theatre")
@@ -24,5 +22,5 @@ public class Theatre {
 
     @OneToMany(mappedBy = "theatre", cascade = CascadeType.ALL)
     @JsonBackReference
-    private Set<Auditorium> auditoriums;
+    private Set<String> screens;
 }
