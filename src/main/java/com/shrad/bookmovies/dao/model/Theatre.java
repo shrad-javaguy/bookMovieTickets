@@ -1,4 +1,4 @@
-package com.shrad.bookmovies.repository.model;
+package com.shrad.bookmovies.dao.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
@@ -20,7 +20,6 @@ public class Theatre {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "theatre", cascade = CascadeType.ALL)
-    @JsonBackReference
-    private Set<String> screens;
+    @Column(name = "address")
+    private String address;
 }

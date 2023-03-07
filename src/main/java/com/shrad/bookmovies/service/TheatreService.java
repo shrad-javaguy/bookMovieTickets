@@ -1,7 +1,7 @@
 package com.shrad.bookmovies.service;
 
-import com.shrad.bookmovies.repository.model.Movie;
-import com.shrad.bookmovies.repository.model.Theatre;
+import com.shrad.bookmovies.dao.model.Movie;
+import com.shrad.bookmovies.dao.model.Theatre;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

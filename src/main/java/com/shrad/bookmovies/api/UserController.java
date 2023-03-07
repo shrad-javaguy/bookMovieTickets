@@ -1,6 +1,6 @@
 package com.shrad.bookmovies.api;
 
-import com.shrad.bookmovies.repository.model.User;
+import com.shrad.bookmovies.dao.model.User;
 import com.shrad.bookmovies.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 

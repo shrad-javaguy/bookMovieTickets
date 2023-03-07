@@ -1,7 +1,7 @@
 package com.shrad.bookmovies.api;
 
-import com.shrad.bookmovies.repository.model.Movie;
-import com.shrad.bookmovies.repository.model.Theatre;
+import com.shrad.bookmovies.dao.model.Movie;
+import com.shrad.bookmovies.dao.model.Theatre;
 import com.shrad.bookmovies.service.TheatreService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

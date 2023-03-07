@@ -1,4 +1,4 @@
-package com.shrad.bookmovies.repository.model;
+package com.shrad.bookmovies.dao.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;

@@ -1,4 +1,4 @@
-package com.shrad.bookmovies.repository.model;
+package com.shrad.bookmovies.dao.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -43,7 +43,6 @@ public class Reservations {
     @Column(name = "is_active")
     private boolean isActive;
 
-    @OneToMany(mappedBy = "booking", cascade = CascadeType.ALL)
-    @JsonBackReference
-    private Set<String> bookedSeats;
+    @Column(name = "booked_seats")
+    private String bookedSeats;
 }

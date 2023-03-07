@@ -1,6 +1,6 @@
 package com.shrad.bookmovies.service;
 
-import com.shrad.bookmovies.repository.model.Reservations;
+import com.shrad.bookmovies.dao.model.Reservations;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
